@@ -3,7 +3,9 @@
 <HEAD>
 
 <TITLE>Your Title Here</TITLE>
+<script>
 
+</script>
 </HEAD>
 
 <BODY BGCOLOR="FFFFFF">
@@ -25,9 +27,18 @@ Send me mail at <a href="mailto:support@yourcompany.com">
 support@yourcompany.com</a>.
 
 <P> This is a new paragraph!
+<script>
+function getParams() {
+    var idx = document.URL.indexOf('?');
+    var params = {}; // simple js object
 
-<P> <B>This is a new paragraph!</B>
+} 
 
+params = getParams();
+
+for( var i in params ){
+    document.write(i," = "+ params[i] + "<br>");
+</script>
 <BR> <B><I>This is a new sentence without a paragraph break, in bold italics.</I></B>
 
 <HR>
