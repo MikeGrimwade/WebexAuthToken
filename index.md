@@ -48,7 +48,11 @@ document.write("Did it");
 
 </script>
 <BR> <B><I>This is a new sentence without a paragraph break, in bold italics.</I></B>
+<p id="demo"></p>
 
+<script>
+document.getElementById("demo").innerHTML = "Hello JavaScript!";
+</script> 
 <HR>
 
 </BODY>
